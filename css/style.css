@@ -1,0 +1,199 @@
+:root {
+    --color-blue: #05b1b1;
+    --color-purp: #52339a;
+    --bg: #eee;
+}
+
+/* color */
+.color1 {
+    color: var(--color-blue);
+}
+
+.color2 {
+    color: var(--color-purp);
+}
+
+section {
+    padding: 100px 0;
+}
+
+header,
+footer {
+    background: url(../img/pattern.png), var(--color-blue);
+    background: url(../img/pattern.png), -moz-linear-gradient(left, var(--color-blue) 0%, var(--color-purp) 100%);
+    background: url(../img/pattern.png), -webkit-gradient(left top, right top, color-stop(0%, var(--color-blue)), color-stop(100%, var(--color-purp)));
+    background: url(../img/pattern.png), -webkit-linear-gradient(left, var(--color-blue) 0%, var(--color-purp) 100%);
+    background: url(../img/pattern.png), -o-linear-gradient(left, var(--color-blue) 0%, var(--color-purp) 100%);
+    background: url(../img/pattern.png), -ms-linear-gradient(left, var(--color-blue) 0%, var(--color-purp) 100%);
+    background: url(../img/pattern.png), linear-gradient(to right, var(--color-blue) 0%, var(--color-purp) 100%);
+    filter: url(../img/pattern.png), progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--color-blue)', endColorstr='var(--color-purp)', GradientType=1);
+    background-size: contain;
+}
+
+.underline {
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-blue);
+    margin: 15px auto 30px;
+}
+
+/* Header */
+header {
+    padding: 200px 0;
+}
+
+.header__play {
+    background-color: var(--color-blue);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 30px auto;
+    transition: all .2s ease;
+}
+
+.header__play:hover {
+    background-color: var(--color-purp);
+}
+
+.header__play_icon {
+    margin-right: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent var(--bs-white);
+}
+
+.btn-order {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    border: 0;
+    border-radius: 5px;
+    color: var(--bs-white);
+    background-color: var(--color-purp);
+}
+
+.btn-order:hover {
+    background-color: var(--color-blue);
+    color: var(--bs-white);
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* About */
+.section-about {
+    background: var(--bg);
+}
+
+.section-about__icon_circle {
+    margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--color-purp);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-about i {
+    font-size: 25px;
+    color: var(--color-purp);
+}
+
+/* For who */
+
+.section-for h5 {
+    padding: 50px;
+    border: 3px solid var(--color-blue);
+}
+
+/* Programm */
+
+.section-program {
+    background-color: var(--bg);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-white);
+    background-color: var(--color-purp);
+}
+
+/* Author */
+
+.section-author {
+    padding-bottom: 0;
+}
+
+.author-img {
+    max-width: 260px;
+}
+
+/* Comments */
+
+.section-comments {
+    background-color: var(--bg);
+}
+
+.user-avatar {
+    border: 3px solid var(--color-blue);
+}
+
+.section-comments .underline {
+    background-color: var(--color-purp);
+}
+
+/* Buy */
+
+.section-buy__img{
+    max-width: 450px;
+}
+
+/* Footer */
+
+.footer{
+    padding: 30px 0;
+}
+
+.footer__social-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .section-buy__img{
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 540px) {
+    .section-buy__img{
+        max-width: 260px;
+    }
+}
